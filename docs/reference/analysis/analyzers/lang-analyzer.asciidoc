@@ -621,8 +621,9 @@ The `french` analyzer could be reimplemented as a `custom` analyzer as follows:
     "analysis": {
       "filter": {
         "french_elision": {
-        "type":         "elision",
-            "articles": [ "l", "m", "t", "qu", "n", "s",
+          "type":         "elision",
+          "articles_case": true,
+          "articles": [ "l", "m", "t", "qu", "n", "s",
                           "j", "d", "c", "jusqu", "quoiqu",
                           "lorsqu", "puisqu"
                         ]
